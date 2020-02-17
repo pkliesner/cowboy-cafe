@@ -46,16 +46,13 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         if (sweet) return 10;
-                        else if (!sweet) return 5;
-                        break;
+                        else return 5;
                     case (Size.Medium):
                         if (sweet) return 22;
-                        else if (!sweet) return 11;
-                        break;
+                        else return 11;
                     case (Size.Large):
                         if (sweet) return 36;
-                        else if (!sweet) return 18;
-                        break;
+                        else return 18;
                     default:
                         throw new NotImplementedException();
                 }
@@ -72,14 +69,11 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case (Size.Small):
-                        return 1.00;
-                        break;
+                        return 1.00;                   
                     case (Size.Medium):
                         return 1.50;
-                        break;
                     case (Size.Large):
                         return 2.00;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }

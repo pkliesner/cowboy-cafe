@@ -9,14 +9,7 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    /// <summary>
-    /// Gets and sets the size of the side
-    /// </summary>
-    public enum Size
-    {
-        small, medium, large
-    }
-    public class PandeCampo : Side
+    public class PanDeCampo : Side
     {
         /// <summary>
         /// Gets and sets the calories of the side
@@ -29,13 +22,10 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         return 277;
-                        break;
                     case (Size.Medium):
                         return 269;
-                        break;
                     case (Size.Large):
                         return 367;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }
@@ -53,13 +43,10 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         return 1.59;
-                        break;
                     case (Size.Medium):
                         return 1.79;
-                        break;
                     case (Size.Large):
                         return 1.99;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }

@@ -15,11 +15,6 @@ namespace CowboyCafe.Data
     public abstract class Side
     {
         /// <summary>
-        /// Gets and sets the size of the side
-        /// </summary>
-        public virtual Size Size { get; set; }
-
-        /// <summary>
         /// Gets the price of the side
         /// </summary>
         public abstract double Price { get; }
@@ -28,5 +23,8 @@ namespace CowboyCafe.Data
         /// Gets the calories of the side
         /// </summary>
         public abstract uint Calories { get; }
+
+
+        public virtual Size Size { get; set; }
     }
 }

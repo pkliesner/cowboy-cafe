@@ -9,13 +9,6 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    /// <summary>
-    /// Gets and sets the size of the side
-    /// </summary>
-    public enum Size
-    {
-        small, medium, large
-    }
     public class ChiliCheeseFries : Side
     {
         /// <summary>
@@ -29,13 +22,10 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         return 433;
-                        break;
                     case (Size.Medium):
                         return 524;
-                        break;
                     case (Size.Large):
                         return 610;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }
@@ -53,13 +43,10 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         return 1.99;
-                        break;
                     case (Size.Medium):
                         return 2.99;
-                        break;
                     case (Size.Large):
                         return 3.99;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }

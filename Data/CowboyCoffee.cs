@@ -14,11 +14,11 @@ namespace CowboyCafe.Data
     /// </summary>
     public class CowboyCoffee : Drink
     {
-        private bool ice = false;
+        private new bool ice = false;
         /// <summary>
         /// If the drink has ice
         /// </summary>
-        public bool Ice
+        public new bool Ice
         {
             get { return ice; }
             set { ice = value; }
@@ -45,13 +45,10 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         return 3;
-                        break;
                     case (Size.Medium):
                         return 5;
-                        break;
                     case (Size.Large):
                         return 7;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }
@@ -69,13 +66,10 @@ namespace CowboyCafe.Data
                 {
                     case (Size.Small):
                         return 0.60;
-                        break;
                     case (Size.Medium):
                         return 1.10;
-                        break;
                     case (Size.Large):
                         return 1.60;
-                        break;
                     default:
                         throw new NotImplementedException();
                 }

@@ -10,22 +10,6 @@ using System.Text;
 namespace CowboyCafe.Data
 {
     /// <summary>
-    /// Possible flavors for drinks
-    /// </summary>
-    public enum SodaFlavor
-    {
-        CreamSoda, OrangeSoda, Sarsaparilla, BirchBeer, RootBeer
-    }
-
-    /// <summary>
-    /// Gets and sets the size of the side
-    /// </summary>
-    public enum Size
-    {
-        small, medium, large
-    }
-
-    /// <summary>
     /// A base class representing a side
     /// </summary>
     public abstract class Drink
