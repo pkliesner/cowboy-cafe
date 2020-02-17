@@ -9,16 +9,15 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// Gets and sets the size of the side
+    /// </summary>
+    public enum Size
+    {
+        small, medium, large
+    }
     public class BakedBeans : Side
     {
-        /// <summary>
-        /// Gets and sets the size of the side
-        /// </summary>
-        public enum Size
-        {
-            small, medium, large
-        }
-
         /// <summary>
         /// Gets and sets the calories of the side
         /// </summary>

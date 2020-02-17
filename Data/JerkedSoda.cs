@@ -1,7 +1,7 @@
 ﻿//Patrick Kliesner
 //For CIS 400 by Nathan Bean
 //2/9/2020
-//Pan de Campo
+//Jerked Soda
 
 using System;
 using System.Collections.Generic;
@@ -10,16 +10,15 @@ using System.Text;
 namespace CowboyCafe.Data
 {
     /// <summary>
-    /// Gets and sets the size of the side
+    /// A class fro the JerkedSoda drink
     /// </summary>
-    public enum Size
+    public class JerkedSoda : Drink
     {
-        small, medium, large
-    }
-    public class PandeCampo : Side
-    {
+
+        private SodaFlavor Flavor;
+        
         /// <summary>
-        /// Gets and sets the calories of the side
+        /// Gets and sets the calories of the drink
         /// </summary>
         public override double Calories
         {
@@ -28,13 +27,13 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case (Size.Small):
-                        return 277;
+                        return 110;
                         break;
                     case (Size.Medium):
-                        return 269;
+                        return 146;
                         break;
                     case (Size.Large):
-                        return 367;
+                        return 198;
                         break;
                     default:
                         throw new NotImplementedException();
@@ -43,7 +42,7 @@ namespace CowboyCafe.Data
         }
 
         /// <summary>
-        /// Gets and sets the price of the side
+        /// Gets and sets the price of the drink
         /// </summary>
         public override uint Price
         {
@@ -55,14 +54,27 @@ namespace CowboyCafe.Data
                         return 1.59;
                         break;
                     case (Size.Medium):
-                        return 1.79;
+                        return 2.10;
                         break;
                     case (Size.Large):
-                        return 1.99;
+                        return 2.59;
                         break;
                     default:
                         throw new NotImplementedException();
                 }
+            }
+        }
+        /// <summary>
+        /// Special instructions for the drink
+        /// </summary>
+        public List<string> SpecialInstructions
+        {
+            get
+            {
+                var instructions = new List<string>();
+
+                if (!ice) instructions.Add("Hold Ice");
+                return instructions;
             }
         }
     }
