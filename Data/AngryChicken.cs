@@ -1,4 +1,9 @@
-﻿using System;
+﻿//Patrick Kliesner
+//For CIS 400 by Nathan Bean
+//2/9/2020
+//AngryChicken
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
