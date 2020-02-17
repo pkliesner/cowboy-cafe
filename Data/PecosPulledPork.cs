@@ -27,14 +27,14 @@ namespace CowboyCafe.Data
         /// </summary>
         public bool Pickel
         {
-            get { return cheese; }
-            set { cheese = value; }
+            get { return pickel; }
+            set { pickel = value; }
         }
 
         /// <summary>
         /// The price of the pork
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -45,7 +45,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The calories of the pork
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -56,13 +56,13 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Special instructions for the preparation of the pork
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
                 var instructions = new List<string>();
 
-                if (!bread) itructions.Add("hold bread");
+                if (!bread) instructions.Add("hold bread");
                 if (!pickel) instructions.Add("hold pickel");
 
                 return instructions;

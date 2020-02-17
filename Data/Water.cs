@@ -29,38 +29,39 @@ namespace CowboyCafe.Data
         /// Gets and sets the calories of the drink.
         /// The calories change on if the drink is sweet or not.
         /// </summary>
-        public override double Calories
+        public override uint Calories
         {
             get
             {
                 return 0;
             }
         }
-    }
 
-    /// <summary>
-    /// Gets and sets the price of the drink
-    /// </summary>
-    public override uint Price
-    {
-        get
+
+        /// <summary>
+        /// Gets and sets the price of the drink
+        /// </summary>
+        public override double Price
         {
-            return 0.12;
+            get
+            {
+                return 0.12;
+            }
         }
-    }
 
-    /// <summary>
-    /// Special instructions for the drink
-    /// </summary>
-    public List<string> SpecialInstructions
-    {
-        get
+        /// <summary>
+        /// Special instructions for the drink
+        /// </summary>
+        public override List<string> SpecialInstructions
         {
-            var instructions = new List<string>();
+            get
+            {
+                var instructions = new List<string>();
 
-            if (!ice) instructions.Add("Hold Ice");
-            if (lemon) instructions.Add("Add Lemon");
-            return instructions;
+                if (!ice) instructions.Add("Hold Ice");
+                if (lemon) instructions.Add("Add Lemon");
+                return instructions;
+            }
         }
     }
 }

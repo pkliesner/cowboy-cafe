@@ -40,8 +40,8 @@ namespace CowboyCafe.Data
             get { return mustard; }
             set { mustard = value; }
         }
-        private bool ketchup = true;
-        
+
+        private bool pickel = true;
         /// <summary>
         /// If the burger is topped with pickel
         /// </summary>
@@ -65,7 +65,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The price of the burger
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -76,7 +76,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The calories of the burger
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -87,13 +87,13 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Special instructions for the preparation of the burger
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
                 var instructions = new List<string>();
 
-                if (!bun) itructions.Add("hold bun");
+                if (!bun) instructions.Add("hold bun");
                 if (!ketchup) instructions.Add("hold ketchup");
                 if (!mustard) instructions.Add("hold mustard");
                 if (!pickel) instructions.Add("hold pickel");

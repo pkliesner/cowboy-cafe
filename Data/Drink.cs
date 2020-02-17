@@ -53,11 +53,11 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets and sets the ice value for the drink, default true
         /// </summary>
-        private bool ice = true;
+        public bool ice = true;
         public bool Ice
         {
             get { return ice; }
-            set { ice = vaule; }
+            set { ice = value; }
         }
     }
 }

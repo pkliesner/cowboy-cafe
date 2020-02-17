@@ -18,7 +18,7 @@ namespace CowboyCafe.Data
         public bool Tomato
         {
             get { return tomato; }
-            set { bun = value; }
+            set { tomato = value; }
         }
 
         private bool lettuce = true;
@@ -45,7 +45,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The price of the burger
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -56,7 +56,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// The calories of the burger
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -67,13 +67,13 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Special instructions for the preparation of the burger
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
                 var instructions = new List<string>();
 
-                if (!tomato) itructions.Add("hold tomato");
+                if (!tomato) instructions.Add("hold tomato");
                 if (!lettuce) instructions.Add("hold lettuce");
                 if (!mayo) instructions.Add("hold mayo");
 

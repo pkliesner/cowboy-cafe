@@ -21,7 +21,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets and sets the calories of the side
         /// </summary>
-        public override double Calories
+        public override uint Calories
         {
             get
             {
@@ -45,7 +45,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets and sets the price of the side
         /// </summary>
-        public override uint Price
+        public override double Price
         {
             get
             {
