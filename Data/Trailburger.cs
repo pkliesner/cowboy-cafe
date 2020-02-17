@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class Trailburger
+    public class Trailburger : Entree
     {
         private bool bun = true;
         /// <summary>
