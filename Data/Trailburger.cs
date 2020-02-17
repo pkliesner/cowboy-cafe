@@ -9,7 +9,7 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
-    public class Trailburger : Entree
+    public class TrailBurger : Entree
     {
         private bool bun = true;
         /// <summary>

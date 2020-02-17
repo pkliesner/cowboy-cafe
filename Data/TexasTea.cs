@@ -28,7 +28,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// If the drink has lemon
         /// </summary>
-        private bool Lemon
+        public bool Lemon
         {
             get { return lemon; }
             set { lemon = value; }

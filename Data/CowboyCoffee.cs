@@ -28,7 +28,7 @@ namespace CowboyCafe.Data
         /// <summary>
         /// If the drink has room for cream
         /// </summary>
-        private bool RoomForCream
+        public bool RoomForCream
         {
             get { return roomForCream; }
             set { roomForCream = value; }

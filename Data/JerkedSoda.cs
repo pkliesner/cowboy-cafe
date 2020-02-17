@@ -14,7 +14,7 @@ namespace CowboyCafe.Data
     /// </summary>
     public class JerkedSoda : Drink
     {
-        private SodaFlavor Flavor;
+        public SodaFlavor Flavor;
         
         /// <summary>
         /// Gets and sets the calories of the drink
