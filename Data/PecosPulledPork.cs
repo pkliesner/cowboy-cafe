@@ -21,14 +21,14 @@ namespace CowboyCafe.Data
             set { bread = value; }
         }
 
-        private bool pickel = true;
+        private bool pickle = true;
         /// <summary>
         /// If the pork is topped with pickel
         /// </summary>
-        public bool Pickel
+        public bool Pickle
         {
-            get { return pickel; }
-            set { pickel = value; }
+            get { return pickle; }
+            set { pickle = value; }
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace CowboyCafe.Data
                 var instructions = new List<string>();
 
                 if (!bread) instructions.Add("hold bread");
-                if (!pickel) instructions.Add("hold pickel");
+                if (!pickle) instructions.Add("hold pickel");
 
                 return instructions;
             }

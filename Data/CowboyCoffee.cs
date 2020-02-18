@@ -24,6 +24,16 @@ namespace CowboyCafe.Data
             set { ice = value; }
         }
 
+        private bool decaf = false;
+        /// <summary>
+        /// If the drink is decaf
+        /// </summary>
+        public  bool Decaf
+        {
+            get { return decaf; }
+            set { decaf = value; }
+        }
+
         private bool roomForCream = false;
         /// <summary>
         /// If the drink has room for cream

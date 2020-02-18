@@ -41,14 +41,14 @@ namespace CowboyCafe.Data
             set { mustard = value; }
         }
 
-        private bool pickel = true;
+        private bool pickle = true;
         /// <summary>
         /// If the burger is topped with pickel
         /// </summary>
-        public bool Pickel
+        public bool Pickle
         {
-            get { return pickel; }
-            set { pickel = value; }
+            get { return pickle; }
+            set { pickle = value; }
         }
 
         private bool cheese = true;
@@ -96,7 +96,7 @@ namespace CowboyCafe.Data
                 if (!bun) instructions.Add("hold bun");
                 if (!ketchup) instructions.Add("hold ketchup");
                 if (!mustard) instructions.Add("hold mustard");
-                if (!pickel) instructions.Add("hold pickel");
+                if (!pickle) instructions.Add("hold pickle");
                 if (!cheese) instructions.Add("hold cheese");
 
                 return instructions;
