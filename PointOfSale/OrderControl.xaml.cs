@@ -22,5 +22,10 @@ namespace PointOfSale
         {
             InitializeComponent();
         }
+
+        private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
