@@ -42,7 +42,7 @@ namespace CowboyCafe.Data
             {
                 var instructions = new List<string>();
 
-                instructions.Add("None");
+
 
                 return instructions;
             }
