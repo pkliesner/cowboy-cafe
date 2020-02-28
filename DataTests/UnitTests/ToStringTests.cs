@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using CowboyCafe.Data;
-/*
+using CowboyCafe.Data.Entrees;
+using CowboyCafe.Data.Drinks;
+using CowboyCafe.Data.Sides;
+
 namespace CowboyCafe.DataTests
 {
     public class ToStringTests
@@ -117,4 +120,4 @@ namespace CowboyCafe.DataTests
 
     }
 }
-*/
+

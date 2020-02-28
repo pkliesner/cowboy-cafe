@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using Xunit;
 using CowboyCafe.Data;
+using CowboyCafe.Data.Entrees;
+using CowboyCafe.Data.Drinks;
+using CowboyCafe.Data.Sides;
 
 namespace CowboyCafe.DataTests
 {

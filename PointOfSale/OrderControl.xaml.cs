@@ -46,7 +46,7 @@ namespace PointOfSale
                 case "CowpokeChiliButton":
                     OrderBox.Items.Add(new CowpokeChili().ToString());
                     break;
-                case "DakotaDoubleButton":
+                case "DakotaDoubleBurgerButton":
                     OrderBox.Items.Add(new DakotaDoubleBurger().ToString());
                     break;
                 case "PecosPulledPorkButton":
@@ -55,7 +55,7 @@ namespace PointOfSale
                 case "RustlersRibsButton":
                     OrderBox.Items.Add(new RustlersRibs().ToString());
                     break;
-                case "TexasTripleButton":
+                case "TexasTripleBurgerButton":
                     OrderBox.Items.Add(new TexasTripleBurger().ToString());
                     break;
                 case "TrailBurgerButton":
@@ -69,7 +69,7 @@ namespace PointOfSale
         /// <summary>
         /// Method that adds side to the order list
         /// </summary>
-        private void addSideToList(object sender, RoutedEventArgs e)
+        private void addSideToOrder(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
 
@@ -95,7 +95,7 @@ namespace PointOfSale
         /// <summary>
         /// Method that adds drink to the order list
         /// </summary>
-        private void addDrinkToList(object sender, RoutedEventArgs e)
+        private void addDrinkToOrder(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
 
@@ -119,4 +119,4 @@ namespace PointOfSale
         }
     }
 }
-}
+

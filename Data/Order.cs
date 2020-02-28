@@ -13,7 +13,7 @@ namespace CowboyCafe.Data
 
 		public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
 
-		public void Add(IOrderItem item)
+		/*public void Add(IOrderItem item)
         {
 
         }
@@ -21,7 +21,7 @@ namespace CowboyCafe.Data
 		public void Remove(IOrderItem item)
         {
 
-        }
+        }*/
 	}
 }
 
