@@ -12,7 +12,7 @@ namespace CowboyCafe.Data.Sides
     /// <summary>
     /// A base class representing a side
     /// </summary>
-    public abstract class Side
+    public abstract class Side : IOrderItem
     {
         /// <summary>
         /// Gets the price of the side
