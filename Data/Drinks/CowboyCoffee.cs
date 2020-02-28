@@ -106,7 +106,14 @@ namespace CowboyCafe.Data.Drinks
         /// </summary>
         public override string ToString()
         {
-            return Size.ToString() + " Cowboy Coffee";
+            if (Decaf)
+            {
+                return Size.ToString() + " Decaf Cowboy Coffee";
+            }
+            else
+            {
+                return Size.ToString() + " Cowboy Coffee";
+            }
         }
     }
 }

@@ -76,7 +76,28 @@ namespace CowboyCafe.Data.Drinks
         /// </summary>
         public override string ToString()
         {
-            return Size.ToString() + " Jerked Soda";
+            string flavor;
+            switch (Flavor)
+            {
+                case SodaFlavor.BirchBeer:
+                    flavor = "Birch Beer";
+                    break;
+                case SodaFlavor.CreamSoda:
+                    flavor = "Cream Soda";
+                    break;
+                case SodaFlavor.OrangeSoda:
+                    flavor = "Orange Soda";
+                    break;
+                case SodaFlavor.RootBeer:
+                    flavor = "Root Beer";
+                    break;
+                case SodaFlavor.Sarsparilla:
+                    flavor = "Sarsparilla";
+                    break;
+                default:
+                    throw new NotImplementedException("Unknown flavor");
+            }
+            return Size.ToString() + " " + flavor + " Jerked Soda";
         }
     }
 }

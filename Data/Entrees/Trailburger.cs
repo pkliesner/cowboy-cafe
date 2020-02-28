@@ -109,7 +109,7 @@ namespace CowboyCafe.Data.Entrees
         /// <returns></returns>
         public override string ToString()
         {
-            return "Trailburger";
+            return "Trail Burger";
         }
     }
 }
