@@ -26,5 +26,7 @@ namespace CowboyCafe.Data.Sides
 
 
         public virtual Size Size { get; set; }
+
+        public List<string> SpecialInstructions => throw new NotImplementedException();
     }
 }

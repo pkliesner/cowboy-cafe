@@ -34,14 +34,14 @@ namespace PointOfSale
         /// <summary>
         /// Method that adds entree to the order list
         /// </summary>
-        private void addEntreeToOrder(object sender, RoutedEventArgs e)
+        private void AddEntreeToOrder(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
 
             switch (b.Name)
             {
                 case "AngryChickenButton":
-                    OrderBox.Items.Add(new AngryChicken().ToString());
+                    OrderSummaryBox.Items.Add(new AngryChicken().ToString());
                     break;
                 case "CowpokeChiliButton":
                     OrderBox.Items.Add(new CowpokeChili().ToString());
@@ -69,7 +69,7 @@ namespace PointOfSale
         /// <summary>
         /// Method that adds side to the order list
         /// </summary>
-        private void addSideToOrder(object sender, RoutedEventArgs e)
+        private void AddSideToOrder(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
 
@@ -95,7 +95,7 @@ namespace PointOfSale
         /// <summary>
         /// Method that adds drink to the order list
         /// </summary>
-        private void addDrinkToOrder(object sender, RoutedEventArgs e)
+        private void AddDrinkToOrder(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
 

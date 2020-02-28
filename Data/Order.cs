@@ -16,13 +16,13 @@ namespace CowboyCafe.Data
 
 		private List<IOrderItem> items = new List<IOrderItem>();
 
+		public List<IOrderItem> Items { get; set; }
+
 		public double Subtotal { get; }
 
 		public uint OrderNumber { get; }
 
 		public event PropertyChangedEventHandler PropertyChanged;
-
-		public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
 
 
 		/// <summary>

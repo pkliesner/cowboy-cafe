@@ -12,7 +12,6 @@
             <Setter Property="Margin" Value="2"/>
         </Style>
         <Style TargetType="TextBlock">
-
             <Setter Property="FontSize" Value="20"/>
         </Style>
         <Style TargetType="ListView">
@@ -20,17 +19,17 @@
         </Style>
     </UserControl.Resources>
 
-    <Grid Width="800">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="182*"/>
-            <RowDefinition Height="261*"/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160*"/>
             <ColumnDefinition Width="160*"/>
             <ColumnDefinition Width="160*"/>
-            <ColumnDefinition Width="151*"/>
-            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="160*"/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
 
@@ -38,38 +37,40 @@
         <StackPanel Name="EntreeStackPanel" Grid.ColumnSpan="2" Margin="0,0,158,0" Grid.RowSpan="2">
             <TextBlock TextAlignment= "Center">Entrees</TextBlock>
             
-            <Button Name="AngryChickenButton" Click="addEntreeToOrder">Angry Chicken</Button>
-            <Button Name="CowpokeChiliButton" Click="addEntreeToOrder">Cowpoke Chili</Button>
-            <Button Name="DakotaDoubleBurgerButton" Click="addEntreeToOrder">Dakota Double Burger</Button>
-            <Button Name="PecosPulledPorkButton" Click="addEntreeToOrder">Pecos Pulled Pork</Button>
-            <Button Name="RustlersRibsButton" Click="addEntreeToOrder">Rustler's Ribs</Button>
-            <Button Name="TexasTripleBurgerButton" Click="addEntreeToOrder">Texas Triple Burger</Button>
-            <Button Name="TrailBurgerButton" Click="addEntreeToOrder">Trail Burger</Button>
+            <Button Name="AngryChickenButton" Click="AddEntreeToOrder">Angry Chicken</Button>
+            <Button Name="CowpokeChiliButton" Click="AddEntreeToOrder">Cowpoke Chili</Button>
+            <Button Name="DakotaDoubleBurgerButton" Click="AddEntreeToOrder">Dakota Double Burger</Button>
+            <Button Name="PecosPulledPorkButton" Click="AddEntreeToOrder">Pecos Pulled Pork</Button>
+            <Button Name="RustlersRibsButton" Click="AddEntreeToOrder">Rustler's Ribs</Button>
+            <Button Name="TexasTripleBurgerButton" Click="AddEntreeToOrder">Texas Triple Burger</Button>
+            <Button Name="TrailBurgerButton" Click="AddEntreeToOrder">Trail Burger</Button>
         </StackPanel>
 
         <!--Sides Stack Panel-->
         <StackPanel Name="SideStackPanel" Grid.Column="1" Grid.RowSpan="2">
             <TextBlock TextAlignment="Center">Sides</TextBlock>
 
-            <Button Name="BakedBeansButton" Click="addSideToOrder">Baked Beans</Button>
-            <Button Name="ChiliCheeseFriesButton" Click="addSideToOrder">Chili Cheese Fries</Button>
-            <Button Name="CornDodgersButton" Click="addSideToOrder">Corn Dodgers</Button>
-            <Button Name="PanDeCampoButton" Click="addSideToOrder">Pan De Campo</Button>
+            <Button Name="BakedBeansButton" Click="AddSideToOrder">Baked Beans</Button>
+            <Button Name="ChiliCheeseFriesButton" Click="AddSideToOrder">Chili Cheese Fries</Button>
+            <Button Name="CornDodgersButton" Click="AddSideToOrder">Corn Dodgers</Button>
+            <Button Name="PanDeCampoButton" Click="AddSideToOrder">Pan De Campo</Button>
         </StackPanel>
 
         <!--Drink Stack Panel-->
         <StackPanel Name="DrinkStackPanel" Grid.Column="1" Grid.ColumnSpan="2" Margin="158,0,6,0" Grid.RowSpan="2">
             <TextBlock TextAlignment="Center">Drinks</TextBlock>
 
-            <Button Name="CowboyCoffeeButton" Click="addDrinkToOrder">Cowboy Coffee</Button>
-            <Button Name="JerkedSodaButton" Click="addDrinkToOrder">Jerked Soda</Button>
-            <Button Name="TexasTeaButton" Click="addDrinkToOrder">Texas Tea</Button>
-            <Button Name="WaterButton" Click="addDrinkToOrder">Water</Button>
+            <Button Name="CowboyCoffeeButton" Click="AddDrinkToOrder">Cowboy Coffee</Button>
+            <Button Name="JerkedSodaButton" Click="AddDrinkToOrder">Jerked Soda</Button>
+            <Button Name="TexasTeaButton" Click="AddDrinkToOrder">Texas Tea</Button>
+            <Button Name="WaterButton" Click="AddDrinkToOrder">Water</Button>
         </StackPanel>
 
         <!--Order Stack Panel-->
-        <ListView x:Name="OrderBox" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="14,32,14,10"
-                  Width="292"/>
+        <local:OrderSummaryControl Grid.Column="3" 
+                                   Grid.RowSpan="2" 
+                                   Grid.ColumnSpan="2"
+                                    Margin="10"/>
 
 
     </Grid>
