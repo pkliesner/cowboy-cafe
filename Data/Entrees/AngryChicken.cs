@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CowboyCafe.Data
+namespace CowboyCafe.Data.Entrees
 {
     public class AngryChicken : Entree
     {
@@ -67,6 +67,15 @@ namespace CowboyCafe.Data
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Overrides the toString method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return "Angry Chicken";
         }
     }
 }

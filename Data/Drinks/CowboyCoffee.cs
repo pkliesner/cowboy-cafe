@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CowboyCafe.Data
+namespace CowboyCafe.Data.Drinks
 {   
     /// <summary>
     /// A class for the Cowboy Coffee drink
@@ -99,6 +99,14 @@ namespace CowboyCafe.Data
                 if (roomForCream) instructions.Add("Room for Cream");
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Overrides the toString method
+        /// </summary>
+        public override string ToString()
+        {
+            return Size.ToString() + " Cowboy Coffee";
         }
     }
 }

@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CowboyCafe.Data
+namespace CowboyCafe.Data.Entrees
 {
     public class TrailBurger : Entree
     {
@@ -101,6 +101,15 @@ namespace CowboyCafe.Data
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Overrides the toString method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return "Trailburger";
         }
     }
 }

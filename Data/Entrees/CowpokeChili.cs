@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CowboyCafe.Data
+namespace CowboyCafe.Data.Entrees
 {
     /// <summary>
     /// A class representing the Cowpoke Chili entree
@@ -91,6 +91,15 @@ namespace CowboyCafe.Data
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Overrides the toString method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return "Cowpoke Chili";
         }
     }
 }

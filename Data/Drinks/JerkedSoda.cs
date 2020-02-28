@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CowboyCafe.Data
+namespace CowboyCafe.Data.Drinks
 {
     /// <summary>
     /// A class fro the JerkedSoda drink
@@ -69,6 +69,14 @@ namespace CowboyCafe.Data
                 if (!ice) instructions.Add("Hold Ice");
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Overrides the toString method
+        /// </summary>
+        public override string ToString()
+        {
+            return Size.ToString() + " Jerked Soda";
         }
     }
 }

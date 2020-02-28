@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PointOfSale"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="#FF5B5B5B">
+             d:DesignHeight="450" Background="#FF5B5B5B" Width="800">
     <UserControl.Resources>
         <Style TargetType="Button">
             <Setter Property="Height" Value="50"/>
@@ -15,27 +15,30 @@
 
             <Setter Property="FontSize" Value="20"/>
         </Style>
-        <Style TargetType="TextBox">
-            <Setter Property="Margin" Value="8"/>
-            <Setter Property="Height" Value="400"/>
+        <Style TargetType="ListView">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         </Style>
     </UserControl.Resources>
 
-    <Grid Opacity="0.995">
-
-
+    <Grid Width="800">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="182*"/>
+            <RowDefinition Height="261*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width= "2*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
 
-
-        <StackPanel>
+        <!--Entree Stack Panel-->
+        <StackPanel Name="EntreeStackPanel" Grid.ColumnSpan="2" Margin="0,0,158,0" Grid.RowSpan="2">
             <TextBlock TextAlignment= "Center">Entrees</TextBlock>
             <Button Name="AddAngryChickenButton" Click="AddAngryChickenButton_Click">Angry Chicken</Button>
-            <Button Name="AddCowpokeChiliButton">Cowpoke Chili</Button>
+            <Button Name="AddCowpokeChiliButton" Click="AddCowpokeChiliButton_Click">Cowpoke Chili</Button>
             <Button Name="DakotaDoubleBurgerButton">Dakota Double Burger</Button>
             <Button Name="PecosPulledPorkButton">Pecos Pulled Pork</Button>
             <Button Name="RustlersRibsButton">Rustler's Ribs</Button>
@@ -43,7 +46,8 @@
             <Button Name="TrailBurgerButton">Trail Burger</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="1">
+        <!--Sides Stack Panel-->
+        <StackPanel Name="SideStackPanel" Grid.Column="1" Grid.RowSpan="2">
             <TextBlock TextAlignment="Center">Sides</TextBlock>
             <Button Name="AddBakedBeansButtons">Baked Beans</Button>
             <Button Name="AddChilliCheeseFriesButton">Chilli Cheese Fries</Button>
@@ -51,7 +55,8 @@
             <Button Name="PanDeCampoButton">Pan De Campo</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="2">
+        <!--Drink Stack Panel-->
+        <StackPanel Name="DrinkStackPanel" Grid.Column="1" Grid.ColumnSpan="2" Margin="158,0,6,0" Grid.RowSpan="2">
             <TextBlock TextAlignment="Center">Drinks</TextBlock>
             <Button Name="AddCowboyCoffeeButton">Cowboy Coffee</Button>
             <Button Name="JerkedSodaButton">Jerked Soda</Button>
@@ -59,11 +64,11 @@
             <Button Name="WaterButton">Water</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="3">
-            <TextBlock TextAlignment="Center">Order</TextBlock>
-            <TextBox Name="OrderTextBox"/>
-        </StackPanel>
-        
+        <!--Order Stack Panel-->
+        <ListView x:Name="OrderBox" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="14,32,14,10"
+                  Width="292"/>
+
 
     </Grid>
+
 </UserControl>

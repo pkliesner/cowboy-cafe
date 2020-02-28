@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CowboyCafe.Data
+namespace CowboyCafe.Data.Sides
 {
     public class CornDodgers : Side
     {
@@ -51,6 +51,14 @@ namespace CowboyCafe.Data
                         throw new NotImplementedException();
                 }
             }
+        }
+
+        /// <summary>
+        /// Overrides the toString method
+        /// </summary>
+        public override string ToString()
+        {
+            return Size.ToString() + " Corn Dodgers";
         }
     }
 }
